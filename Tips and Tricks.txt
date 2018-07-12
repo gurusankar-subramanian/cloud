@@ -1,0 +1,18 @@
+Spring CLOUD tips :
+
+1. To register a client, have atleast one API
+2. Place ur Controllers below the application run file
+3. refresh endpoint  : http://localhost:1002/actuator/refresh 
+4. env endpoint : http://localhost:1002/actuator/env 
+
+These endpoints will work if we include maangement endpoints in prop file
+
+
+URLs:
+http://localhost:999/client2/default - config server 
+http://localhost:1000/ - eureka server 
+	
+http://localhost:1001/api/service/names - client1 API
+http://localhost:1002/api/service/names - client2 API
+
+http://localhost:1002/api/service/testValue - client2 config value API
