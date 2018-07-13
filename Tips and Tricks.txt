@@ -10,9 +10,15 @@ These endpoints will work if we include maangement endpoints in prop file
 
 URLs:
 http://localhost:999/client2/default - config server 
+
 http://localhost:1000/ - eureka server 
 	
 http://localhost:1001/api/service/names - client1 API
 http://localhost:1002/api/service/names - client2 API
 
 http://localhost:1002/api/service/testValue - client2 config value API
+
+
+
+http://localhost:990/client1/api/service/testValue - zuul proxy for client1
+http://localhost:990/client2/api/service/testValue - zuul proxy for client2
